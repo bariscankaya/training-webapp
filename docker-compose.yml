@@ -1,0 +1,9 @@
+version:  "3.3" # compose file version 
+services: # info about containers 
+  barisweb:
+    image: webapp:v3 
+    build: . 
+    container_name: webapp_c3
+    ports:
+    - "1125:80"
+    restart: always
